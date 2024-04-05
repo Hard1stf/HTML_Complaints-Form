@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint-Page</title>
+    <style>
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
+        
+        h1.heading{
+            font-weight: lighter;
+            font-size: 3rem;
+            margin: 0px;
+        }
+        h3.heading{
+            font-weight: 100;
+            margin-top: 0px;
+        }
+
+        #main-container{
+            /* align-items: center; */
+            /* height: 100vh; */
+            position:relative;
+            top:100px;
+        }
+
+        table{
+            background-color:#fffacd;
+            border: 20px solid blueviolet;
+            padding: 30px;
+            margin: auto; /* Set the margin value = auto , which take automatically center horizontally. */
+        }
+        hr{
+            border: 3px solid black;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        
+        .label{
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        #button-submit{
+            background-color: #800080;
+            color: #fffacd;
+            font-size: 2ex;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 10px;
+            
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main-container">
+    <table>
+        <thead>
+            <th colspan="2">
+                <h1 class="heading">Complaints</h1>
+                <h3 class="heading"> Help us to improve our service. </h3>
+                <hr>
+            </th>
+    </thead>
+
+    <!-- table data start from here ... -->
+        <tr>
+            <td class="label">
+                <label for="">Full name <em style="color: red;">*</em></label>
+            </td>
+            <td class="input">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+            </td>
+            <tr>
+                <td class="label">
+                    <label for="">Email<em style="color: red;">*</em></label>
+                </td>
+                <td class="input">
+                    <!-- input for email id -->
+                    <input type="email" name="email" id="" placeholder="abc@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Phone <em style="color: red;">*</em></label>
+                </td>
+                <td class="input">
+                    <!---input for phone number --->
+                    <input type="tel" name="phone number" id="" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Where did we <br>go wrong ? <em style="color: red;">*</em></label>
+                </td>
+                <td class="input">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="write your suggestions.."></textarea>
+                    <!-- create of suggestions with <textarea> tag -->
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Submit" id="button-submit">
+                </th>
+            </tr>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
